@@ -1,0 +1,72 @@
+//---------------------------------------------------------//
+// Icons
+//---------------------------------------------------------// 
+// - All Icons
+//---------------------------------------------------------//
+
+.socials-icons{
+	float: right;
+	list-style: none; 
+	margin: 0 10px 0 0;
+	@include breakpoint(xs-only){
+		float: none;
+		text-align: center;
+	}
+	li{
+		float: left;
+		margin-left: 8px;
+		line-height: 0;
+		@include breakpoint(xs-only){
+			float: none;
+			display: inline-block;
+		}
+		.circle {			
+			width: 30px;
+			height: 30px;
+			-webkit-border-radius: 15px;
+			-moz-border-radius: 15px;
+			border-radius: 15px;
+			display: inline-block;
+			background-color: #787878;
+			background-image: url(#{$img-url}/social-icons.png);			
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.linkedin{
+			background-position: 0 0;		
+			&:hover{
+				background-color: #0e76a8; 
+			}
+		}
+
+		.twitter{
+			background-position: -30px 0;
+			&:hover{
+				background-color: #00acee;
+			}
+		}
+		.pin{
+			background-position: -60px 0;
+			&:hover{
+				background-color: #c8232c;
+			}
+		}
+
+		.google{ 
+			background-position: -90px 0;
+			&:hover{
+				background-color: #db4a39;
+			}
+		}
+ 
+		.rss{
+			background-position: -120px 0;
+			&:hover{
+				background-color: #ee802f;
+			}
+		}
+	}
+
+}
+

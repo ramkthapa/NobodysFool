@@ -1,0 +1,33 @@
+// Variables
+//---------------------------------------------------------//
+@import 'config/custom-variables';
+
+
+
+
+// Bootstrap (Include necessary components only for css file size)
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';   
+ 
+// Base
+//---------------------------------------------------------//
+
+@import 'base/mixins';
+
+
+// // Components
+// //---------------------------------------------------------//
+
+@import 'components/custom';
+@import 'components/header';
+@import 'components/navbar';
+@import 'components/buttons';
+@import 'components/icons';
+@import 'components/banner';
+@import 'components/thumbnails';
+@import 'components/calltoaction'; 
+@import 'components/footer';
+
+ 
+
+
+

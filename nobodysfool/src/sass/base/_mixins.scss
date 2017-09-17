@@ -1,0 +1,86 @@
+//---------------------------------------------------------//
+// MIXINS
+//---------------------------------------------------------// 
+// - Custom mixins
+//---------------------------------------------------------//
+
+
+// Screen
+
+$screen-xlg:                  1400px;
+$screen-xlg-min:              $screen-xlg;
+
+// Breakpoint (Media Query for Bootstrap)
+//---------------------------------------------------------//
+
+
+@mixin breakpoint($query) {
+	@if $query == "xs-only" {
+		@media (max-width: $screen-xs-max) {
+			@content;
+		} 
+	}
+
+	@else if $query == "sm" {
+		@media (min-width: $screen-sm-min) {
+			@content;
+		}
+	}
+	
+	@else if $query == "sm-only" {
+		@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+			@content;
+		}
+	}
+
+	@else if $query == "md" {
+		@media (min-width: $screen-md-min) {  
+			@content;
+		}
+	}
+
+	@else if $query == "md-only" {
+		@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+			@content;
+		}
+	}
+
+	@else if $query == "lg" {
+		@media (min-width: $screen-lg-min) {
+			@content;
+		}
+	}
+
+	@else if $query == "xlg" {
+		@media (min-width: $screen-xlg-min) {
+			@content;
+		}
+	}
+
+	@else if $query == "small-screen" {
+		@media (max-width: 480px) {
+			@content;
+		}
+	}
+}
+
+
+// Transition
+//---------------------------------------------------------//
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+
+
+// Transform
+//---------------------------------------------------------//
+
+
+@mixin rotate($degrees) {
+	-webkit-transform: rotateX($degrees);
+	 -o-transform: rotateX($degrees);
+	    transform: rotateX($degrees);
+}

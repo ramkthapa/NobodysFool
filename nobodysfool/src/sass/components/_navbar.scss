@@ -1,0 +1,66 @@
+//---------------------------------------------------------//
+// Navigation
+//---------------------------------------------------------// 
+// - All Menus
+//---------------------------------------------------------//
+
+
+.navbar-default {
+	margin: 0;
+	background: none;
+	border:0;
+}
+
+.navbar-collapse {
+	padding: 0;
+}
+
+.navbar-toggle{
+	margin-right: 52px!important;
+	margin-top: 0!important;
+}
+
+.navbar-nav {
+	border-bottom: 5px solid #f1f1f1;
+	width: 100%;
+	padding-top: 20px;
+	@include breakpoint(xs-only) {
+    	float: none;
+    	margin: 0px;
+		padding: 20px; 
+    }
+	>li {		
+	    float: left;
+	    margin-bottom: -5px;
+	    @include breakpoint(xs-only) {
+	    	float: none;
+	    }
+	    a {
+			text-transform: uppercase;
+			color: #2e2e2e;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 13px;
+			font-weight: normal;
+			padding-right: 5px;
+			padding-left: 5px;
+			padding-bottom: 20px;
+			transition: .3s ease border-bottom;
+			border-bottom: 5px solid transparent;
+			@include breakpoint(md) {
+		        font-size: 14px;		        
+				padding-right: 10px;
+				padding-left: 10px;
+		    }
+		    @include breakpoint(xs-only) {
+		    	width: 100%;
+		    	padding: 15px 0;
+		    }
+		
+			&.active, &:hover {
+				color: #9f9f9f;
+				border-bottom: 5px solid #0099ff;
+			}
+		}
+	}
+}

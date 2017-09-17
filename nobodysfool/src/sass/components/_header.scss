@@ -1,0 +1,126 @@
+header{
+	background: #ffffff;
+	.socials{
+		background: #2e2e2e;
+		padding: 10px 0;
+		.pages{
+			list-style: none;
+			float: left;
+			margin: 0;
+			padding: 5px 0;
+			@include breakpoint(xs-only){
+				float: none;
+				text-align: center;
+				margin-bottom: 10px
+			}
+			li{
+				float: left;
+				@include breakpoint(xs-only){
+					float: none;
+					display: inline-block;
+				}
+				a {
+					color: #9f9f9f;
+					text-decoration: none;
+					display: inline-block;
+					border-right: 1px solid;
+					padding-right:6px;
+					padding-left: 6px;
+					font-size: 12px
+				}
+				&:last-child a{
+					border-right:0px;
+				}
+			}
+		}
+	}
+}
+
+.navbar-default {
+	.container {
+		position: relative;
+		#topbar-collapse {
+		    height: 31px;
+		    width: 31px;
+		    display: inline-block;
+		    position: absolute;
+		    top: 0px;
+		    background: #2e2e2e;
+		    border-radius: 0 0 5px 5px;
+		    right: 20px;
+		    cursor: pointer;
+		    padding: 6px 10px;
+		    .icon-plus-minus {
+		    	display: inline-block;
+		    	background-image: url(#{$img-url}/plus-minus-icon.png);
+		    	background-position: -11px 0;
+		    	height: 11px;
+		    	width: 11px;
+		    }
+		    &.active {
+		    	.icon-plus-minus {
+		    		background-position: 0 0;
+		    	}
+		    }
+		}
+	}
+}
+
+
+.brand{
+	background: #fff;
+	padding: 45px 0;
+	@include breakpoint(xs-only){
+		padding: 0px 0 10px;
+	}
+	.logo{
+		float: left;
+		 @include breakpoint(small-screen) {
+	    	float: none !important;
+	    }
+		h1{
+			font-size: 36px;
+			color: #333333;
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+		span{
+			font-size: 12px ;
+			color: #999999;
+		}
+	}
+}
+
+.search {
+    padding: 20px 0 0 0;
+    @include breakpoint(small-screen) {
+    	float: none !important;
+    	max-width: 260px;
+    }
+    .form-group {
+		display: inline-block;
+		margin-bottom: 0;		
+	}
+	.btn{
+		font-size: 8px;
+		text-decoration: none;
+		margin-left: 8px;
+		float: right;
+		color: #ffffff;
+		background: #0099ff;
+		border : 1px solid #0099ff;
+		border-radius: 6px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		padding: 8px 10px;
+		font-size: 12px;
+		&:hover{
+			background: #22a7ff;
+		}
+	}
+}
+
+
+
+
+
